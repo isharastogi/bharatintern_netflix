@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Merriweather+Sans:wght@500&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.nav
+{
+    display: flex;
+    place-items: end;
+    place-content: end;
+    padding: 1vw;
+}
+.nav select
+{
+    margin-right: 0.6vw;
+    padding: 0.1vw;
+    font-size: 2vh;
+}
+.nav input
+{
+    padding: 0.1vw;
+    font-size: 2vh;
+    border-radius: 2%;
+}
+.nav input[type=button]
+{
+    background-color: red;
+    color: white;
+}
+.container
+{
+    background: url("mainBackground.avif");
+    height: 90vh;
+    width: 99vw;
+    background-size: cover;
+}
+.container svg
+{
+    width: 30vw;
+    height: 20vh;
+}
+.container .logo
+{
+    display: grid;
+    place-content: center;
+    place-items: center;
+    width: 50vw;
+    margin-top: 3vh;
+}
+.container .primary_text
+{
+    display: grid;
+    font-size: 6vh;
+    width: 50vw;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    color: white;
+    padding: 2vh;
+    font-weight: bold;
+    font-family: 'Lilita One', cursive;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.container .secondry_text
+{
+    display: grid;
+    font-size: 4vh;
+    width: 50vw;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    color: white;
+    padding: 2vh;
+    font-weight: bold;
+    font-family: 'Lilita One', cursive;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.container .ternary_text
+{
+    display: grid;
+    font-size: 2vh;
+    width: 50vw;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    color: white;
+    padding: 2vh;
+    font-family: 'Lilita One', cursive;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.container .form
+{
+    display: flex;
+    place-content: center;
+    place-items: center;
+    width: 50vw;
+    margin-top: 3vh;
+}
+.container .form input
+{
+    padding: 1vh;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    margin: 2px;
+    font-size: 2vh;
+}
+.container .form input[type=email]
+{
+    width: 35%;
+}
+.container .form input[type=button]
+{
+    transition-duration: 2s;
+}
+.container .form input[type=button]:hover
+{
+    background-color: red;
+}
+.feature_content 
+{
+    display: flex;
+    place-content: center;
+    place-items: center;
+    background-color: black;
+}
+.feature_content .card
+{
+    width: 20vw;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    height: 35vh;
+    margin: 2vh;
+    border-radius: 5%;
+    padding: 2vh;
+}
+.feature_content .card .card_content
+{
+    display: grid;
+    place-content: center;
+    place-items: center;
+    color: white;
+}
+.feature_content .card .card_content .heading
+{
+    font-size: 4vh;
+    font-weight: 100;
+}
+.feature_content .card .card_content .content 
+{
+    margin-top: 1vh
+}
+.faq
+{
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+@media only screen and (max-width: 800px) 
+{
+    body
+    {
+        overflow-x: hidden;
+    }
+    .nav
+    {
+        display: none;
+    }
+    .container
+    {
+        display: grid;
+        place-content: center;
+        place-items: center;
+        height: 75vh;
+    }
+    .container .primary_text 
+    {
+        width: 100vw;
+        font-size: 5.5vw;
+        text-align: center;
+        padding: 0;
+    }
+    .container .secondry_text 
+    {
+        width: 100vw;
+        font-size: 4vw;
+        text-align: center;
+    }
+    .container .ternary_text 
+    {
+        width: 100vw;
+        font-size: 3vw;
+        text-align: center;
+    }
+    .feature_content 
+    {
+        display: grid;
+        width: 100vw;
+    }
+    .feature_content .card
+    {
+        width: 80vw;
+    }
+}
